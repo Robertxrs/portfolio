@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Rocha | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-bg">
+    <div class="header container">
+      <div class="header-logo">
+        <a href="./">
+          <h1 class="font-3-xl">ROBERT<span>ROCHA</span></h1>
+        </a>
+      </div>
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a class="font-1-l color-link" href="#inicio">Início</a></li>
+          <li><a class="font-1-l color-link" href="#sobre">Sobre</a></li>
+          <li><a class="font-1-l color-link" href="#projetos">Projetos</a></li>
+          <li><a class="font-1-l color-link" href="#contato">Contato</a></li>
+          <li>
+            <!-- Botão modo escuro -->
+            <div class="switch-mode">
+              <input type="checkbox" id="switch" class="switch" aria-label="switch" />
+              <label for="switch" class="switch-label"></label>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="overlay"></div>
+    <div class="main-content">
+      <p class="font-1-l">Olá, visitante! 👋</p>
+      <h1 class="font-3-xl">Meu nome é Robert</h1>
+      <p class="font-3-l">Desenvolvedor Full-Stack</p>
+    </div>
+  </main>
+
+  <!-- Sobre -->
+  <section class="container about-bg" id="sobre">
+    <h2 class="font-l">SOBRE MIM</h2>
+    <h1 class="font-1-xl">Conheça mais sobre mim</h1>
+    <p class="font-2-m">
+      Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco em soluções que atendem tanto as necessidades dos usuários quanto os desafios do mercado. Minha jornada na área de desenvolvimento começou com o desejo de criar ferramentas que otimizam a vida das pessoas e simplificam processos complexos.
+      <br><br>
+      Ao longo dos anos, adquiri experiência em diversas tecnologias, incluindo Angular, Java, Node.js e frameworks como Spring Boot, sempre buscando melhorar minhas habilidades e aplicar as melhores práticas. Acredito que a chave para o sucesso em tecnologia está na constante evolução e aprendizado.
+    </p>
+
+    <div class="skills">
+      <div class="skill"><img src="assets/img/icons/angular.svg" alt="Ícone da skill Angular" /></div>
+      <div class="skill"><img src="assets/img/icons/html5.svg" alt="Ícone da skill HTML" /></div>
+      <div class="skill"><img src="assets/img/icons/css.svg" alt="Ícone da skill CSS" /></div>
+      <div class="skill"><img src="assets/img/icons/js.svg" alt="Ícone da skill JavaScript" /></div>
+      <div class="skill"><img src="assets/img/icons/bootstrap.svg" alt="Ícone da skill Bootstrap" /></div>
+      <div class="skill"><img src="assets/img/icons/java.svg" alt="Ícone da skill Java" /></div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <article class="project-list container" id="projetos">
+    <h1>Conheça meus projetos abaixo!</h1>
+    <ul>
+      <li class="project-item">
+        <div class="image-container">
+          <img src="" alt="Imagem do projeto Juds" class="project-img">
+        </div>
+        <div class="project-info">
+          <h1 class="project-title">Juds</h1>
+          <p class="project-description">
+            O JUDS é um sistema desktop desenvolvido com Angular, Node.js e Electron, criado para gerenciar e otimizar atividades de forma prática e integrada.
+          </p>
+          <ul class="tags-list">
+            <li class="tag">angular</li>
+            <li class="tag">node.js</li>
+            <li class="tag">electron</li>
+            <li class="tag">mongoDB</li>
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">bootstrap</li>
+          </ul>
+          <a href="https://github.com/Robertxrs/Juds" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="image-container">
+          <img src="assets/img/img-project/scokcraft.png" alt="Imagem do projeto Scokcraft" class="project-img">
+        </div>
+        <div class="project-info">
+          <h1 class="project-title">Scokcraft</h1>
+          <p class="project-description">
+            Plataforma especializada na venda de scooters elétricas personalizadas, com sistema eficiente e intuitivo.
+          </p>
+          <ul class="tags-list">
+            <li class="tag">angular</li>
+            <li class="tag">java</li>
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">springboot</li>
+            <li class="tag">javascript</li>
+            <li class="tag">mongoDB</li>
+          </ul>
+          <a href="https://scokcraft.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="image-container">
+          <img src="assets/img/img-project/aurea.png" alt="Imagem do projeto Áurea" class="project-img">
+        </div>
+        <div class="project-info">
+          <h1 class="project-title">Áurea Torolho</h1>
+          <p class="project-description">
+            Plataforma de atendimento e clínica especializada em terapia maternal infantil.
+          </p>
+          <ul class="tags-list">
+            <li class="tag">WordPress</li>
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">javascript</li>
+          </ul>
+          <a href="https://aureatorolhoterapeuta.com.br" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="image-container">
+          <img src="assets/img/img-project/moreira.png" alt="Imagem do projeto Moreira" class="project-img">
+        </div>
+        <div class="project-info">
+          <h1 class="project-title">Moreira</h1>
+          <p class="project-description">
+            Plataforma para atendimento em geriatria e clínica médica, com agendamento de consultas.
+          </p>
+          <ul class="tags-list">
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">javascript</li>
+          </ul>
+          <a href="https://project-moreira-geriatria.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+</body>
+</html>
