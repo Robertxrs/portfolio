@@ -240,7 +240,7 @@ main {
   padding-top: 20px;
   font-size: 44px;
   color: #1272d8;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .project-item {
   display: flex;
@@ -268,7 +268,8 @@ main {
 .project-title {
   font-size: 24px;
   color: #007bff;
-  margin: 0;
+  margin: px;
+
 }
 .project-description {
   font-size: 20px;
@@ -292,6 +293,8 @@ main {
   font-weight: bold;
   margin-top: 10px;
   transition: 0.3s;
+  background-color: transparent !important;
+  padding-left: 0px;
 }
 .project-button:hover {
   color: #0095ff;
