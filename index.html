@@ -1,193 +1,431 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Wendher Santos">
   <title>Robert Rocha | Portfólio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700"
+    rel="stylesheet">
+
+  <meta property="og:image" content="https://wendhersantos.github.io/assets/eu.png">
+  <meta property="og:image:secure_url" content="https://wendhersantos.github.io/assets/eu.png">
+  <meta property="og:image:alt" content="Foto do Wendher Santos">
+
+  <meta name="twitter:image" content="https://wendhersantos.github.io/assets/eu.png">
+  <meta name="twitter:image:alt" content="Foto do Wendher Santos">
+
 </head>
+
 <body>
+  <header class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6 col-xs-12">
+          <nav>
+            <div id="menu-toggle">
+              <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <div class="cross">
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <ul class="main-nav">
+              <li><a href="https://github.com/Robertxrs" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/robert-rocha-santos/" target="_blank">LinkedIn</a></li>
+              <li><a href="#" target="_blank" onclick="copyAndOpenEmail(); return false;">Email</a></li>
+              <li><a href="https://wa.me/5511958913445" target="_blank">WhatsApp</a></li>
+            </ul>
+          </nav>
 
-  <!-- Header -->
-  <header class="header-bg">
-    <div class="header container">
-      <div class="header-logo">
-        <a href="./">
-          <h1 class="font-3-xl">ROBERT<span>ROCHA</span></h1>
-        </a>
-      </div>
-      <nav aria-label="primaria">
-        <ul class="header-menu">
-            <li><a class="font-1-l color-link" href="#sobre">Sobre</a></li>
-            <li><a class="font-1-l color-link" href="#projetos">Projetos</a></li>
-          <li>
-
-         <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" aria-label="dark-light"/>
-            <div class="sec-center">  
-                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-                <label class="for-dropdown" for="dropdown">Redes<i class="uil uil-arrow-down"></i></label>
-                    <div class="section-dropdown"> 
-                        <a href="https://github.com/Robertxrs"  target="_blank" rel="noopener noreferrer">GITHUB<i class="uil uil-arrow-right" ></i></a>
-                        <a href="https://wa.me/5511958913445"  target="_blank" rel="noopener noreferrer" >WHATSAPP<i class="uil uil-arrow-right"></i></a>
-                        <a href="https://www.linkedin.com/in/robert-rocha-santos/"  target="_blank" rel="noopener noreferrer">LINKEDIN<i class="uil uil-arrow-right"></i></a>
-                    </div>
+          <div class="hero-text" style="text-align: right;">
+            <h1><span class="fade-in">Olá, Eu sou o</span><br><span class="fade-in">Robert</span></h1>
+            <h2 class="fade-in" style="font-size: 2em; font-weight: bold;">Desenvolvedor Web</h2>
+            <h3 class="fade-in">Estudante Análise de Desenvolvimento de Sistemas</h3>
+            <a href="https://drive.google.com/file/"
+              class="btn btn-lg btn-primary mr-400 fade-in" target="_blank">Baixar CV</a>
+            <ul class="social-links fade-in">
+              <li class="label"></li>
+              <li>
+                  <a href="#" onclick="copyAndOpenEmail(); return false;">
+                    <img src="assets/gmail.png" alt="Email">
+                  </a>
+                </li>
+              <li><a href="https://wa.me/5511958913445" target="_blank"><img src="assets/whatsapp.png"></a></li>
+              <li><a href="https://www.linkedin.com/in/robert-rocha-santos/" target="_blank"><img
+                    src="assets/linkedin.png"></a></li>
+              <li><a href="https://github.com/Robertxrs" target="_blank"><img src="assets/github.png"></a></li>
+            </ul>
+          </div>
         </div>
-        
-
-          </li>
-        </ul>
-      </nav>
+      </div>
     </div>
   </header>
 
-  <!-- Main -->
-  <main>
-    <div class="overlay"></div>
-    <div class="main-content">
-      <p class="font-1-l">Olá, visitante! 👋</p>
-      <h1 class="font-3-xl">Meu nome é Robert</h1>
-      <p class="font-3-l">Desenvolvedor Full-Stack</p>
-    </div>
-      <div class="social-links">
-        <div class="icons">
-          <a href="https://www.linkedin.com/in/robert-rocha-santos/"
-            class="icon-link" id="linkedin" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/icons/linkedin.svg" alt="Ícone de linkedin" />
-          </a>
-          
-          <a href="https://github.com/Robertxrs"
-            class="icon-link" id="github" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/icons/github.svg" alt="Ícone de github" />
-          </a>
-          
-          <a href="mailto:robert.dev@gmail.com"
-            class="icon-link" id="email" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/icons/envelope.svg" alt="Ícone de envelope" />
-          </a>
-          
-          <a href="https://wa.me/5511958913445"
-            class="icon-link" id="whastapp" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/icons/whatsapp.svg" alt="Ícone de whatsapp" />
-          </a>
+  <section class="case-study">
+    <h4 class="sub-heading text-center">Atualmente</h4>
+    <h1 class="heading purple text-center"><span class="purple">sobre</span> mim <br></h1>
+    <!-- Swiper -->
+    <div class="swiper-container client-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide client-box">
+          <img src="assets/python.gif" class="client-logo">
+          <br>
+          <p class="text-left tag"></p>
+          <h3 class="te t-left title">
+            No momento, estou focando exclusivamente em aprimorar minhas habilidades em <b>Angular</b> e <b>SpringBoot</b>
+            tornando-os minhas
+            habilidades principais.</h3>
+        </div>
+        <div class="swiper-slide client-box">
+          <img src="assets/giphy.gif" class="client-logo">
+          <p class="text-left tag"></p>
+          <h3 class="text-left title">Apaixonado por programação desde os 17 anos e estudante de <b>Análise e Desenvolvimento de Sistemas</b>
+            na
+            Universidade Unicesumar. Adoro desafios que me tiram da zona de conforto, pois é neles que encontro as
+            maiores evoluções e aprendizados. Estudante comprometido, aprecio café e tenho hobbies como animes, corrida
+            e leitura.</h3>
+        </div>
+        <div class="swiper-slide client-box">
+          <img src="assets/Computer.gif" class="client-logo">
+          <p class="text-left tag"></p>
+          <h3 class="text-left title">Meu objetivo é me tornar um futuro <b>Desenvolvedor Full-Stack</b>, com um conhecimento
+            avançado em Angular, Java e em bancos de dados, tanto em ambientes de nuvem quanto em configurações
+            tradicionais. Aspirando criar aplicações que transformem significativamente meu trabalho e tenham um
+            impacto <b>positivo</b> no mundo.</h3>
+           </div>
         </div>
       </div>
-  </main>
-
-  <!-- Sobre -->
-  <section class="container about-bg" id="sobre">
-    <h2 class="font-l">SOBRE MIM</h2>
-    <h1 class="font-1-xl">Conheça mais sobre mim</h1>
-    <p class="font-2-m">
-      Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco em soluções que atendem tanto as necessidades dos usuários quanto os desafios do mercado. Minha jornada na área de desenvolvimento começou com o desejo de criar ferramentas que otimizam a vida das pessoas e simplificam processos complexos.
-      <br><br>
-      Ao longo dos anos, adquiri experiência em diversas tecnologias, incluindo Angular, Java, Node.js e frameworks como Spring Boot, sempre buscando melhorar minhas habilidades e aplicar as melhores práticas. Acredito que a chave para o sucesso em tecnologia está na constante evolução e aprendizado.
-    </p>
-
-    <div class="skills">
-      <div class="skill"><img src="assets/img/icons/angular.svg" alt="Ícone da skill Angular" /></div>
-      <div class="skill"><img src="assets/img/icons/html5.svg" alt="Ícone da skill HTML" /></div>
-      <div class="skill"><img src="assets/img/icons/css.svg" alt="Ícone da skill CSS" /></div>
-      <div class="skill"><img src="assets/img/icons/js.svg" alt="Ícone da skill JavaScript" /></div>
-      <div class="skill"><img src="assets/img/icons/bootstrap.svg" alt="Ícone da skill Bootstrap" /></div>
-      <div class="skill"><img src="assets/img/icons/java.svg" alt="Ícone da skill Java" /></div>
     </div>
   </section>
 
-  <!-- Projetos -->
-  <article class="project-list container" id="projetos">
-    <h1>Conheça meus projetos abaixo!</h1>
-    <ul>
-      <li class="project-item">
-        <div class="image-container">
-          <img src="assets/img/img-project/juds.png" alt="Imagem do projeto Juds" class="project-img">
-        </div>
-        <div class="project-info">
-          <h1 class="project-title">Juds</h1>
-          <p class="project-description">
-            O JUDS é um sistema desktop desenvolvido com Angular, Node.js e Electron, criado para gerenciar e otimizar atividades de forma prática e integrada. 
-            Voltado para uso individual, 
-            o programa combina funcionalidades web e desktop, oferecendo uma interface moderna, responsiva e eficiente para facilitar processos e centralizar informações.
-          </p>
-          <ul class="tags-list">
-            <li class="tag">angular</li>
-            <li class="tag">node.js</li>
-            <li class="tag">electron</li>
-            <li class="tag">mongoDB</li>
-            <li class="tag">html</li>
-            <li class="tag">css</li>
-            <li class="tag">bootstrap</li>
-          </ul>
-          <a href="https://github.com/Robertxrs/Juds" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
-        </div>
-      </li>
+  <section class="case-study">
+    <h4 class="sub-heading text-center">desenvolvimento</h4>
+    <h1 class="heading purple text-center"><span class="purple">meus</span> projetos <br></h1>
 
-      <li class="project-item">
-        <div class="image-container">
-          <img src="assets/img/img-project/scokcraft.png" alt="Imagem do projeto Scokcraft" class="project-img">
-        </div>
-        <div class="project-info">
-          <h1 class="project-title">Scokcraft</h1>
-          <p class="project-description">
-           Este projeto é uma plataforma especializada na venda de scooters elétricas personalizadas, garantindo alta precisão, 
-           qualidade e conforto. Com um sistema eficiente e intuitivo, 
-           os usuários podem explorar diferentes modelos, contratar seguros e entrar em contato facilmente para obter mais informações.
+    <div class="swiper-container client-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide client-box">
+          <img src="https://media.giphy.com/media/fhAwk4DnqNgw8/giphy.gif" class="client-logo">
+          <p class="text-left tag"></p>
+          <h3 class="text-left title">
+            <b>☕ Java - Projetos</b>
+            <br><br>
+            Este repositório reúne códigos, atividades e projetos <b>desenvolvidos em Java</b> ao longo da minha jornada de aprendizado,
+            incluindo estudos de <b>Programação Orientada a Objetos</b>, desenvolvimento backend com <b>Spring Boot</b> e aplicações feitas durante cursos e bootcamps.
+            <br><br>
+            Os projetos estão organizados em pastas, cada uma representando uma etapa ou temática do aprendizado, como cursos do <b>SENAC</b>,
+            exercícios da <b>Udemy</b>, práticas com <b>Spring Boot</b> e desafios de <b>bootcamp</b>.
+            <br><br>
+            Sinta-se à vontade para explorar os códigos, acompanhar minha evolução, colaborar com sugestões ou tirar ideias para seus próprios projetos.
+            Caso tenha alguma dúvida ou comentário, estou à disposição para conversar!
+          </h3>
+          <p class="text-left">
+            <a href="https://github.com/Robertxrs/Java" target="_blank">Veja o repositório no GitHub...</a>
           </p>
-          <ul class="tags-list">
-            <li class="tag">angular</li>
-            <li class="tag">java</li>
-            <li class="tag">html</li>
-            <li class="tag">css</li>
-            <li class="tag">springboot</li>
-            <li class="tag">javascript</li>
-            <li class="tag">mongoDB</li>
-          </ul>
-          <a href="https://scokcraft.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
-        </div>
-      </li>
 
-      <li class="project-item">
-        <div class="image-container">
-          <img src="assets/img/img-project/aurea.png" alt="Imagem do projeto Áurea" class="project-img">
         </div>
-        <div class="project-info">
-          <h1 class="project-title">Áurea Torolho</h1>
-          <p class="project-description">
-           O projeto é uma plataforma para atendimento e clínica, oferecendo suporte especializado em  terapia maternal infantil e psicologia da Gestação e Nascimento.
-            O objetivo é proporcionar um ambiente acessível onde pacientes possam agendar consultas de maneira rápida e segura.
-          </p>
-          <ul class="tags-list">
-            <li class="tag">WordPress</li>
-            <li class="tag">html</li>
-            <li class="tag">css</li>
-            <li class="tag">javascript</li>
-          </ul>
-          <a href="https://aureatorolhoterapeuta.com.br" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
-        </div>
-      </li>
+        <div class="swiper-slide client-box">
+          <img src="https://media.giphy.com/media/guufsF0Az3Lpu/giphy.gif" class="client-logo">
+          <p class="text-left tag"></p>
+          <h3 class="text-left title">
+            <b>🚲 Bikcraft – Venda de Bicicletas Elétricas</b>
+            <br><br>
+            Bikcraft é um site de vendas de bicicletas elétricas de alta precisão e qualidade, desenvolvido com foco em usabilidade e design responsivo. 
+            O sistema permite ao usuário visualizar modelos de bicicletas, acessar detalhes técnicos e entrar em contato com a empresa para 
+            dúvidas ou pedidos especiais.
+            <br>
+            <b>Funcionalidades:</b>
+            <br>
+            <b>Catálogo de Bicicletas:</b> Lista com modelos disponíveis, com imagens, preços e descrições.<br>
 
-      <li class="project-item">
-        <div class="image-container">
-          <img src="assets/img/img-project/moreira.png" alt="Imagem do projeto Moreira" class="project-img">
-        </div>
-        <div class="project-info">
-          <h1 class="project-title">Moreira</h1>
-          <p class="project-description">
-           O projeto é uma plataforma para atendimento em geriatria e clínica médica, oferecendo suporte especializado no tratamento de doenças crônicas,
-            prevenção e cuidados para idosos. 
-           O objetivo é proporcionar um ambiente acessível onde pacientes possam agendar consultas de maneira rápida e segura.
+            <b>Página de Detalhes:</b> Informações técnicas completas de cada bicicleta, com opção de compra.<br>
+
+            <b>Formulário de Contato:</b> Canal direto de comunicação com a empresa.<br>
+
+            <b>Modo Escuro:</b> Interface adaptável para ambientes com pouca luz.<br>
+
+           <b>Tecnologias Utilizadas:</b>
+            Angular, HTML5, CSS3, TypeScript etc
+
+
+          </h3>
+          <p class="text-left"><a href="https://github.com/Robertxrs/Projetos/tree/main/BIKCRAFT" target="_blank">Veja o Projeto...</a>
           </p>
-          <ul class="tags-list">
-            <li class="tag">html</li>
-            <li class="tag">css</li>
-            <li class="tag">javascript</li>
-          </ul>
-          <a href="https://project-moreira-geriatria.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-button">VER PROJETO</a>
         </div>
-      </li>
-    </ul>
-  </article>
+
+        <div class="swiper-slide client-box">
+          <img src="assets/2.gif" class="client-logo">
+          <p class="text-left tag"></p>
+          <h3 class="text-left title">
+            <b>🧩 Projeto de Atividades – HTML, SQL e JavaScript</b>
+            <br><br>
+              Este projeto reúne atividades práticas que aplicam conceitos fundamentais de desenvolvimento web e banco de dados.
+              As tarefas foram desenvolvidas com foco didático, buscando reforçar a lógica de programação, a estruturação de páginas web
+              e a manipulação de dados.
+              <br>
+              <b>🖼️ HTML:</b>
+              <ul>
+                <li>Criação de páginas com estrutura semântica correta.</li>
+                <li>Uso de formulários, tabelas e elementos multimídia.</li>
+                <li>Aplicação de boas práticas de acessibilidade e SEO básico.</li>
+              </ul>
+
+              <b>🛢️ SQL:</b>
+              <ul>
+                <li>Criação e manipulação de bancos de dados relacionais.</li>
+                <li>Execução de comandos como SELECT, INSERT, UPDATE e DELETE.</li>
+                <li>Uso de joins, filtros e ordenações em consultas mais complexas.</li>
+                <li>Criação de tabelas com relacionamentos (chaves primárias e estrangeiras).</li>
+              </ul>
+
+              <b>⚙️ JavaScript:</b>
+              <ul>
+                <li>Manipulação do DOM para tornar as páginas interativas.</li>
+                <li>Validação de formulários no lado do cliente.</li>
+                <li>Uso de funções, eventos, estruturas de repetição e condição.</li>
+                <li>Trabalho com arrays, objetos e dados dinâmicos.</li>
+              </ul>
+          </h3>
+         
+          <p class="text-left">
+            <a href="https://github.com/Robertxrs/HTML" target="_blank">Veja o repositório no GitHub...</a>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="sub-heading text-center">EXPERIÊNCIAS</h4>
+          <h1 class="heading pink text-center"><span class="pink">Conheça</span> a minha <br>trajetória até aqui</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Swiper -->
+          <div class="swiper-container testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial-box yellow">
+                <div class="text-right">
+                  <p class="name">Freelance - Juds</p>
+                  <p class="time">abr de 2025 - jun de 2025</p>
+                </div>
+                <h2>
+                  <b>Desenvolvedor Web</b>
+                </h2>
+                <p>A <b>JUDS</b> é um sistema de gestão desenvolvido para <b>otimizar o controle</b> de estoque, vendas e finanças em pequenos negócios. 
+                  Utilizando <b>Angular</b> no frontend, <b>Node.js</b> no backend e <b>Electron</b> para a versão desktop, o sistema oferece uma plataforma robusta e acessível tanto 
+                  online quanto offline. Através dele, é possível <b>gerenciar o estoque de produtos e ingredientes</b>, realizar vendas que atualizam automaticamente os 
+                  estoques e gerar relatórios financeiros com lucros e despesas. O sistema facilita a administração de pequenos negócios, proporcionando um controle 
+                  eficiente e organizado das operações diárias.
+                  <br><br>
+
+                  A implementação do sistema <b>JUDS</b> gerou resultados significativos para a empresa, promovendo maior organização, agilidade e controle nas operações diárias.
+                  Entre os principais benefícios estão a <b>redução de 90%</b> de erros no controle de estoque,<b> 50% de aumento da produtidade</b> com um processo de vendas mais rápidas e 
+                  <b>maior visibilidade</b> sobre o desempenho financeiro por meio de relatórios claros.
+                  <br><br><b>Tecnologias:</b> Angular, Node.js, Electron, MongoDB, HTML, CSS, Bootstrap etc.
+                </p>
+              </div>
+
+              <div class="swiper-slide testimonial-box purple">
+                <div class="text-right">
+                  <p class="name">Freelance - Moreira</p>
+                  <p class="time">out de 2024 - jun de 2025 · 8 meses</p>
+                </div>
+                <h2>
+                  <b>Desenvolvedor Web</b>
+                </h2>
+                <p>O site <b>Moreira</b> é um projeto voltado para o atendimento em geriatria e clínica médica, com foco no suporte ao 
+                  tratamento de doenças crônicas, prevenção e cuidados com idosos. O sistema foi <b>desenvolvido utilizando HTML, CSS, JavaScript e 
+                  bibliotecas como Bootstrap e Icons</b> , garantindo uma interface moderna, responsiva e de fácil navegação. As atividades realizadas 
+                  incluíram a criação de uma landing page responsiva, um <b>sistema de agendamento de consultas, 
+                  e um formulário com envio automático de e-mails</b>, 
+                  proporcionando uma experiência ágil e segura tanto para pacientes quanto para a equipe médica.
+
+                  <br><br>A implementação da Plataforma Geriátrica trouxe diversos <b>benefícios</b> para a clínica, otimizando o atendimento e melhorando a 
+                  experiência dos pacientes. Entre os principais resultados estão a <b>Facilidade no agendamento de consultas</b>, permitindo que pacientes agendem horários de forma rápida,
+                   <b>Redução de processos manuais, otimizando o tempo</b> da equipe e permitindo foco no atendimento e cuidado aos pacientes e sistema de envio automático de e-mails.
+                </p>
+      
+                <br><b>Tecnologias:</b> HTML, CSS, Bootstrap etc.
+              </div>
+
+              <div class="swiper-slide testimonial-box">
+                <div class="text-right">
+                  <p class="name">Freelance - Áurea Torolho</p>
+                  <p class="time">mai de 2024 - dez de 2024 · 7 meses</p>
+                </div>
+                <h2><b>Desenvolvedor Web</b></h2>
+                <p>A <b>Áurea Torolho</b> é uma site institucional especializado em Terapia Holístico. O projeto foi feito com <b>WordPress</b>, incluindo customização de tema, 
+                  configuração de plugins e gerenciamento de conteúdo. Foram aplicados ajustes personalizados com <b>HTML, CSS e JavaScript</b> na interface. 
+                  Também houve otimização de SEO básico, com melhorias em metadados, títulos e velocidade de carregamento, resultando no aumento de agendamentos da cliente.
+                  <br><br>
+                  A criação do site institucional responsivo trouxe <b>resultados</b> expressivos para a cliente, refletindo diretamente na presença digital e no desempenho do negócio. 
+                  Entre os principais benefícios estão o <b>Aumento</b> significativo nos agendamentos, <b>Melhor posicionamento nos mecanismos de busca</b>, graças à aplicação de 
+                  práticas básicas de SEO e <b>Facilidade de gerenciamento de conteúdo</b>
+
+                <p><b>Tecnologias:</b> WordPress, Elementor, HTML, CSS, JavaScript
+                  entre outras.</p>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12 text-center">
+          <h1>Robert<br><span>Rocha</span></h1>
+          <ul class="social-links">
+            <li><a href="#" target="_blank" onclick="copyAndOpenEmail(); return false;"><img src="assets/gmail.png"></a>
+            </li>
+            <li><a href="https://wa.me/5511958913445"  target="_blank"><img src="assets/whatsapp.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/robert-rocha-santos/" target="_blank"><img src="assets/linkedin.png"></a>
+            <li><a href="https://github.com/Robertxrs" target="_blank"><img src="assets/github.png"></a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- copy email -->
+    <script>
+      function copyAndOpenEmail() {
+    const email = "robert.dev@gmail.com";
+    const mailtoLink = `mailto:${email}?subject=Contato&body=Olá, gostaria de falar com você.`;
+    navigator.clipboard.writeText(email).then(() => {
+      alert("Email copiado para a área de transferência!");
+      window.location.href = mailtoLink;
+    }).catch((err) => {
+      alert("Erro ao copiar o email.");
+      window.location.href = mailtoLink;
+    });
+  }
+  </script>
+
+  <!-- Some Javascript -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <!-- Initialize Client Swiper -->
   <script>
+    var swiper1 = new Swiper('.client-swiper', {
+      slidesPerView: 3,
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 60,
+ 
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: '.swiper-pagination'
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        }
+      }
+    });
+    var swiper2 = new Swiper('.testimonial-swiper', {
+      slidesPerView: 3,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      freeMode: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        }
+      }
+    });
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script>
+    
+    // Counterup
+    $('.counter').counterUp({
+      time: 1000
+    });
 
-</script>
+    // Main Navigation
+    $('#menu-toggle').click(function () {
+      $(this).toggleClass('open'),
+        $('.main-nav').toggleClass('show-it');
+    })
+  </script>
+
+  <!-- Google Analytics - You should remove this -->
+  <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-29231762-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var fadeIns = document.querySelectorAll('.fade-in');
+
+      fadeIns.forEach(function (fadeIn, index) {
+        fadeIn.style.transitionDelay = index * 200 + 'ms';
+      });
+    });
+  </script>
 </body>
+
 </html>
